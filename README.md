@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Project Dependencies
+This project leverages several powerful libraries and tools to streamline form handling and feedback creation:
+
+Mongoose: An elegant MongoDB object modeling tool for Node.js.
+Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+DaisyUI: A component library for Tailwind CSS that provides pre-styled UI elements.
+React Hot Toast: A lightweight and customizable toast notification library for React.
+Setup Instructions
+Environment Variables
+To configure the project for your environment, you'll need to set up your .env file. We've included a .env.example file as a template. Here's how to get started:
+
+Copy .env.example:
+
+bash
+Copy
+Edit
+cp .env.example .env
+Modify DATABASE_URL: Replace your_database_url with your actual MongoDB connection string.
+
+env
+Copy
+Edit
+DATABASE_URL=your_database_url
+Overview
+This project includes a form for creating feedback, demonstrating form handling using React and server-side validation with Zod and Mongoose. You'll see how to manage form state, validate inputs, and handle both client-side and server-side errors effectively.
+
 ## Getting Started
 
 First, run the development server:
