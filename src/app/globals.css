@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Invalid state */
+input:invalid, textarea:invalid {
+  border-color: #fd8787; /* Red border for invalid input */
+}
+
+/* Focus state for invalid input */
+input:focus:invalid, textarea:focus:invalid {
+  border-color: #fd8787; /* Red border for invalid input when focused */
+}
+
+/* For invalid inputs */
+.input:invalid:focus, .textarea:invalid:focus {
+  outline-color: #fd8787; /* Change outline color to red for invalid inputs */
+}
