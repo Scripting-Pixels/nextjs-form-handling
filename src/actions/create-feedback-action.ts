@@ -19,7 +19,7 @@ export async function createFeedbackAction(prevState: FeedbackState, formData: F
       .nonempty({ message: 'Message is required' })
       .max(1000, { message: 'Message should be at most 500 characters long' }),
   })
-  
+
   try {
     const sourceData: FeedbackData = {
       email: formData.get('email') as string,

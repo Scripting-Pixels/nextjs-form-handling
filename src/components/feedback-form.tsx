@@ -40,7 +40,7 @@ function FeedbackForm() {
           name="email"
           type="email"
           defaultValue={state.formValues?.email || ''}
-          className={`input input-bordered w-full`}
+          className={`input input-bordered w-full focus:bg-transparent focus:bg-white`}
           minLength={4}
           maxLength={50}
         />
